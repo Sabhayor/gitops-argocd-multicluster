@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: my-app-prod
+  namespace: argocd
+spec:
+  project: default
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: prod-namespace
+  source:
+    repoURL: https://github.com/Sabhayor/gitops-argocd-multicluster.git
+    targetRevision: main
+    path: prod
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

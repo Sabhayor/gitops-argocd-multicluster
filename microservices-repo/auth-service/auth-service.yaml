@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: auth-service
+  namespace: argocd
+spec:
+  destination:
+    namespace: auth
+    server: https://kubernetes.default.svc
+  source:
+    repoURL: https://github.com/Sabhayor/gitops-argocd-multicluster.git
+    path: auth-service
+    targetRevision: main
+  syncPolicy:
+    automated:
+      selfHeal: true
