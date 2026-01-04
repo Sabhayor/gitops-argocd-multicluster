@@ -228,7 +228,7 @@ spec:
 
 ---
 
-## Lesson 5.2: Building and Managing a CI/CD Pipeline Using ArgoCD
+## Building and Managing a CI/CD Pipeline Using ArgoCD
 
 ### Objective
 
@@ -380,22 +380,3 @@ gitops/
 
 ---
 
-## Conclusion
-
-This project demonstrates **real-world GitOps workflows** using ArgoCD, covering:
-
-* Multi-cluster deployments
-* Microservices lifecycle management
-* CI/CD automation
-* Secure and scalable GitOps practices
-
-You now have a strong foundation to operate ArgoCD in **production-grade Kubernetes environments**.
-
----
-
-If you want, I can also:
-
-* Suggest a **professional GitHub repository name**
-* Convert this into a **downloadable README.md**
-* Extend this into a **capstone project with diagrams**
-* Add **ArgoCD Projects, RBAC, and App-of-Apps pattern**
